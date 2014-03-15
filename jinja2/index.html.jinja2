@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>March Madness</title>
+        <link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="title">
+            <div id="title-first">Crimson</div>
+            <div id="title-second">March Madness</div>
+        </div>
+        <div id="stories">
+            <div class="story-row single cf">
+                {% include 'jinja2/_story.html.jinja2' %}
+            </div>
+            {% include 'jinja2/_bracket.html.jinja2' %}
+            <div class="story-row double cf">
+                {% include 'jinja2/_story_cat.html.jinja2' %}
+                {% include 'jinja2/_story_cat.html.jinja2' %}
+            </div>
+            <div class="double-bracket">
+                {% include 'jinja2/_bracket.html.jinja2' %}
+                {% include 'jinja2/_bracket.html.jinja2' %}
+            </div>
+            <div class="story-row quad cf">
+                {% include 'jinja2/_story.html.jinja2' %}
+                {% include 'jinja2/_story.html.jinja2' %}
+                {% include 'jinja2/_story.html.jinja2' %}
+                {% include 'jinja2/_story.html.jinja2' %}
+            </div>
+        </div>
+        <div id="bg"></div>
+        <div id="cover"></div>
+    </body>
+</html>

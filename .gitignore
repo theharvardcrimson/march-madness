@@ -1,0 +1,3 @@
+compiled_html/*
+*.sw[op]
+.DS_Store
